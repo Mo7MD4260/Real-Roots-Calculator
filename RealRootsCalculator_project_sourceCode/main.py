@@ -157,7 +157,7 @@ def animate_gif(label, gif, frame=0):
         label.config(image=frame_image)
         label.image = frame_image
 
-        # الانتقال إلى الإطار التالي بعد 100 مللي ثانية (سرعة الحركة)
+        # الانتقال إلى الإطار التالي بعد 5 مللي ثانية (سرعة الحركة)
         label.after(5, animate_gif, label, gif, (frame + 1) % gif.n_frames)
     except Exception:
         pass  # في حالة انتهاء الصورة
